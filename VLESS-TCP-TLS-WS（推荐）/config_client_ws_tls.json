@@ -22,7 +22,7 @@
                         "port": 443,
                         "users": [
                             {
-                                "id": "", // 填写你的 UUID
+                                "id": " 076ab023-ef4a-4cc6-9cc9-d054d63afe0d", // 填写你的 UUID
                                 "encryption": "none",
                                 "level": 0
                             }
