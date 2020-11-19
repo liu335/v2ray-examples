@@ -2,6 +2,33 @@
     "log": {
         "loglevel": "warning"
     },
+    "log": {
+        "loglevel": "warning"
+    "inbounds": [
+        {
+            "port": 10800,
+            "listen": "127.0.0.1",
+            "protocol": "socks",
+            "settings": {
+    "log": {
+        "loglevel": "warning"
+    },
+    "inbounds": [
+        {
+            "port": 10800,
+            "listen": "127.0.0.1",
+            "protocol": "socks",
+            "settings": {
+                "udp": true
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "vless",
+    "log": {
+        "loglevel": "warning"
+    },
     "inbounds": [
         {
             "port": 10800,
@@ -16,6 +43,7 @@
         {
             "protocol": "vless",
             "settings": {
+            "settings": {
                 "vnext": [
                     {
                         "address": "example.com", // 换成你的域名或服务器 IP（发起请求时无需解析域名了）
@@ -27,6 +55,14 @@
                                 "level": 0
                             }
                         ]
+                "vnext": [
+                    {
+                        "address": "example.com", // 换成你的域名或服务器 IP（发起请求时无需解析域名了）
+                        "port": 443,
+                        "users": [
+                            {
+                                "id": " 076ab023-ef4a-4cc6-9cc9-d054d63afe0d", // 填写你的 UUID
+                                "encryption": "none",
                     }
                 ]
             },
